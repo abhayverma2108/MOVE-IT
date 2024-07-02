@@ -1,29 +1,8 @@
-/*-----------------------------------*\
-  #style.css
-\*-----------------------------------*/
-
-/**
- * copyright 2022 codewithsadee
- */
-
-
-
-
-
-/*-----------------------------------*\
-  #CUSTOM PROPERTY
-\*-----------------------------------*/
-
 :root {
-
-  /**
-   * colors
-   */
-
   --green-blue-crayola: hsl(202, 75%, 47%);
   --prussian-blue: hsl(202, 72%, 15%);
   --eerie-black: hsl(210, 11%, 15%);
-  --dark-orange: hsl(32, 100%, 50%);
+  --green-blue-crayola: hsl(202, 75%, 47%);
   --alice-blue: hsl(203, 100%, 97%);
   --light-gray: hsl(0, 0%, 80%);
   --indigo-dye: hsl(202, 64%, 26%);
@@ -35,10 +14,6 @@
   --white: hsl(0, 0%, 100%);
   --black: hsl(0, 0%, 0%);
   --onyx: hsl(0, 0%, 24%);
-
-  /**
-   * typography
-   */
 
   --ff-oswald: 'Oswald', sans-serif;
   --ff-rubik: 'Rubik', sans-serif;
@@ -59,23 +34,15 @@
   --fw-700: 700;
   --fw-800: 800;
 
-  /**
-   * spacing
-   */
 
   --section-padding: 50px;
 
-  /**
-   * shadow
-   */
+
    
   --shadow-1: 2px 0 50px hsla(0, 0%, 0%, 0.2);
   --shadow-2: 0px 40px 60px hsla(202, 75%, 47%, 0.7);
   --shadow-3: 0px 0px 60px hsla(202, 75%, 47%, 0.5);
 
-  /**
-   * transition
-   */
 
   --transition: 0.25s ease;
   --cubic-in: cubic-bezier(0.51, 0.03, 0.64, 0.28);
@@ -85,11 +52,6 @@
 
 
 
-
-
-/*-----------------------------------*\
-  #RESET
-\*-----------------------------------*/
 
 *,
 *::before,
@@ -159,9 +121,6 @@ body {
 
 
 
-/*-----------------------------------*\
-  #REUSED STYLE
-\*-----------------------------------*/
 
 .container { padding-inline: 15px; }
 
@@ -199,7 +158,7 @@ body {
 }
 
 .section-subtitle {
-  color: var(--dark-orange);
+  color: var(--green-blue-crayola);
   text-transform: uppercase;
   font-size: var(--fs-6);
   font-family: var(--ff-oswald);
@@ -213,7 +172,7 @@ body {
 .btn {
   position: relative;
   color: var(--white);
-  background-color: var(--dark-orange);
+  background-color: var(--green-blue-crayola);
   max-width: max-content;
   font-size: var(--fs-9);
   letter-spacing: 1px;
@@ -241,7 +200,7 @@ body {
   right: -6px;
   bottom: -6px;
   width: 20px;
-  border: 2px solid var(--dark-orange);
+  border: 2px solid var(--green-blue-crayola);
   z-index: -1;
 }
 
@@ -255,7 +214,7 @@ body {
 }
 
 .btn-link {
-  color: var(--dark-orange);
+  color: var(--green-blue-crayola);
   font-size: var(--fs-7);
   text-transform: uppercase;
   display: flex;
@@ -277,9 +236,6 @@ body {
 
 
 
-/*-----------------------------------*\
-  #HEADER
-\*-----------------------------------*/
 
 .header-contact { display: none; }
 
@@ -365,7 +321,7 @@ body {
 
 .navbar-link:is(:hover, :focus) {
   background-color: var(--cultured-1);
-  color: var(--dark-orange);
+  color: var(--green-blue-crayola);
 }
 
 .overlay {
@@ -387,10 +343,6 @@ body {
 
 
 
-/*-----------------------------------*\
-  #HERO
-\*-----------------------------------*/
-
 .hero {
   position: relative;
   min-height: 100vh;
@@ -411,7 +363,7 @@ body {
 }
 
 .hero-title .span {
-  color: var(--dark-orange);
+  color: var(--green-blue-crayola);
   font-size: var(--fs-2);
   font-weight: var(--fw-700);
 }
@@ -430,8 +382,8 @@ body {
 }
 
 .btn-outline:is(:hover, :focus) {
-  background-color: var(--dark-orange);
-  border-color: var(--dark-orange);
+  background-color: var(--green-blue-crayola);
+  border-color: var(--green-blue-crayola);
 }
 
 .hero-shape {
@@ -457,11 +409,6 @@ body {
 
 
 
-
-
-/*-----------------------------------*\
-  #ABOUT
-\*-----------------------------------*/
 
 .about-banner {
   position: relative;
@@ -493,7 +440,7 @@ body {
 
 .about-icon {
   min-width: max-content;
-  color: var(--dark-orange);
+  color: var(--green-blue-crayola);
   margin-block-start: 8px;
 }
 
@@ -502,10 +449,6 @@ body {
 
 
 
-
-/*-----------------------------------*\
-  #SERVICE
-\*-----------------------------------*/
 
 .service { background-color: var(--alice-blue); }
 
@@ -522,13 +465,13 @@ body {
   transition: var(--transition);
 }
 
-.service-card:is(:hover, :focus-within) { border-color: var(--dark-orange); }
+.service-card:is(:hover, :focus-within) { border-color: var(--green-blue-crayola); }
 
 .service-card .card-icon { margin-block-end: 30px; }
 
 .service-card .card-title .span {
   display: inline-block;
-  color: var(--dark-orange);
+  color: var(--green-blue-crayola);
   font-size: var(--fs-3);
   margin-inline-end: 15px;
 }
@@ -538,9 +481,6 @@ body {
 
 
 
-/*-----------------------------------*\
-  #FEATURE
-\*-----------------------------------*/
 
 .feature .title-wrapper { margin-block-end: 30px; }
 
@@ -566,7 +506,7 @@ body {
   transition: var(--transition);
 }
 
-.feature-card:is(:hover, :focus-within)::before { color: var(--dark-orange); }
+.feature-card:is(:hover, :focus-within)::before { color: var(--green-blue-crayola); }
 
 .feature-card .card-icon {
   background-color: var(--alice-blue);
@@ -591,13 +531,6 @@ body {
 }
 
 
-
-
-
-/*-----------------------------------*\
-  #PROJECT
-\*-----------------------------------*/
-
 .project { background-color: var(--alice-blue); }
 
 .project :is(.section-subtitle, .section-title, .section-text) { text-align: center; }
@@ -607,7 +540,7 @@ body {
 .project-card { position: relative; }
 
 .project-card .action-btn {
-  background-color: var(--dark-orange);
+  background-color: var(--green-blue-crayola);
   color: var(--white);
   font-size: 28px;
   padding: 16px;
@@ -621,7 +554,7 @@ body {
 .project-card:is(:hover, :focus-within) .action-btn { opacity: 1; }
 
 .project-card .card-tag {
-  color: var(--dark-orange);
+  color: var(--green-blue-crayola);
   font-size: var(--fs-9);
 }
 
@@ -637,7 +570,7 @@ body {
 
 .project-card .card-title { transition: var(--transition); }
 
-.project-card :is(.card-title, .card-link):is(:hover, :focus) { color: var(--dark-orange); }
+.project-card :is(.card-title, .card-link):is(:hover, :focus) { color: var(--green-blue-crayola); }
 
 .project-card .card-link {
   color: var(--prussian-blue);
@@ -674,12 +607,6 @@ body {
 
 
 
-
-
-/*-----------------------------------*\
-  #BLOG
-\*-----------------------------------*/
-
 .blog :is(.section-subtitle, .section-title, .section-text) { text-align: center; }
 
 .blog .section-text { margin-block: 20px 50px; }
@@ -698,11 +625,11 @@ body {
   margin-inline: auto 20px;
   margin-block: -80px 20px;
   padding: 20px 25px;
-  box-shadow: -8px 8px 0 var(--dark-orange);
+  box-shadow: -8px 8px 0 var(--green-blue-crayola);
 }
 
 .blog-card .card-meta .span {
-  color: var(--dark-orange);
+  color: var(--green-blue-crayola);
   font-size: var(--fs-3);
   font-weight: var(--fw-700);
   line-height: 0.75;
@@ -712,13 +639,7 @@ body {
 
 
 
-
-
-/*-----------------------------------*\
-  #NEWSLETTER
-\*-----------------------------------*/
-
-.newsletter { background-color: var(--dark-orange); }
+.newsletter { background-color: var(--green-blue-crayola); }
 
 .newsletter .img-holder {
   background-color: transparent;
@@ -750,12 +671,6 @@ body {
 }
 
 
-
-
-
-/*-----------------------------------*\
-  #FOOTER
-\*-----------------------------------*/
 
 .footer {
   background-color: var(--plutinum);
@@ -794,7 +709,7 @@ body {
   font-size: var(--fs-6);
   max-width: max-content;
   padding-block-end: 10px;
-  border-block-end: 3px solid var(--dark-orange);
+  border-block-end: 3px solid var(--green-blue-crayola);
   margin-block-end: 20px;
 }
 
@@ -811,11 +726,6 @@ body {
 
 
 
-
-
-/*-----------------------------------*\
-  #BACK TO TOP
-\*-----------------------------------*/
 
 .back-top-btn {
   position: fixed;
@@ -839,32 +749,14 @@ body {
 
 
 
-
-
-/*-----------------------------------*\
-  #MEDIA QUERISE
-\*-----------------------------------*/
-
-/**
- * responsive for larger than 540px screen
- */
-
 @media (min-width: 540px) {
 
-  /**
-   * REUSED STYLE
-   */
 
   .btn {
     font-size: var(--fs-7);
     padding-inline: 30px 60px;
   }
 
-
-
-  /**
-   * HEADER
-   */
 
   .header-contact {
     color: var(--white);
@@ -894,10 +786,6 @@ body {
 
 
 
-  /**
-   * ABOUT
-   */
-
   .about .abs-img-2 {
     display: block;
     position: absolute;
@@ -912,18 +800,8 @@ body {
 }
 
 
-
-
-
-/**
- * responsive for larger than 640px screen
- */
-
 @media (min-width: 640px) {
 
-  /**
-   * REUSED STYLE
-   */
 
   .h1 { --fs-3: 5rem; }
 
@@ -934,20 +812,11 @@ body {
   }
 
 
-
-  /**
-   * HEADER
-   */
-
   .header .container { max-width: unset; }
 
   .header .logo { font-size: 3.5rem; }
 
 
-
-  /**
-   * HERO
-   */
 
   .hero { justify-content: flex-start; }
 
@@ -968,17 +837,8 @@ body {
 
 
 
-
-
-/**
- * responsive for larger than 768px screen
- */
-
 @media (min-width: 768px) {
 
-  /**
-   * REUSED STYLE
-   */
 
   .container { max-width: 720px; }
 
@@ -987,10 +847,6 @@ body {
   .grid-list { grid-template-columns: 1fr 1fr; }
 
 
-
-  /**
-   * HERO
-   */
 
   .hero-title .span { --fs-2: 7rem; }
 
@@ -1006,28 +862,13 @@ body {
   }
 
 
-
-  /**
-   * FEATURES
-   */
-
   .feature-card::before { --fs-1: 10rem; }
 
-
-
-  /**
-   * PROJECT
-   */
 
   .project-list { gap: 80px; }
 
   .project-item { min-width: calc(50% - 40px); }
 
-
-
-  /**
-   * NEWSLETTER
-   */
 
   .newsletter { margin-block-start: 110px; }
 
@@ -1054,10 +895,6 @@ body {
 
 
 
-  /**
-   * FOOTER
-   */
-
   .footer-top { grid-template-columns: 1fr 1fr; }
 
 }
@@ -1065,28 +902,15 @@ body {
 
 
 
-
-/**
- * responsive for larger than 992px screen
- */
-
 @media (min-width: 992px) {
 
-  /**
-   * CUSTOM PROPERTY
-   */
 
   :root {
 
-    /**
-     * typography
-     */
 
     --fs-4: 4.5rem;
 
-    /**
-     * spacing
-     */
+    
 
     --section-padding: 120px;
 
@@ -1094,9 +918,7 @@ body {
 
 
 
-  /**
-   * REUSED STYLE
-   */
+  
   
   .container { max-width: 960px; }
 
@@ -1113,10 +935,6 @@ body {
 
 
 
-  /**
-   * HEADER
-   */
-  
   .nav-open-btn,
   .navbar-top,
   .navbar-link > ion-icon { display: none; }
@@ -1139,9 +957,6 @@ body {
 
 
 
-  /**
-   * HERO
-   */
   
   .hero { grid-template-columns: 1fr; }
 
@@ -1149,11 +964,6 @@ body {
 
   .hero-title .span { --fs-2: 12rem; }
 
-
-
-  /**
-   * ABOUT
-   */
 
   .about .container {
     display: grid;
@@ -1169,10 +979,6 @@ body {
   .about :is(.section-title, .section-text) { margin-block-end: 35px; }
 
 
-
-  /**
-   * FEATURE
-   */
 
   .feature .title-wrapper {
     display: grid;
@@ -1196,26 +1002,18 @@ body {
 
 
 
-  /**
-   * PROJECT
-   */
+ 
 
   .project-item { min-width: calc(33.33% - 53.33px); }
 
 
 
-  /**
-   * BLOG
-   */
 
   .blog-list { grid-template-columns: 1fr 1fr; }
 
 
 
-  /**
-   * NEWSLETTER
-   */
-
+  
   .newsletter { padding-block: 30px; }
 
   .newsletter .newsletter-banner { bottom: -30px; }
@@ -1228,10 +1026,7 @@ body {
 
 
 
-  /**
-   * FOOTER
-   */
-
+  
   .footer-top {
     grid-template-columns: repeat(4, 1fr);
     justify-items: self-end;
@@ -1245,15 +1040,8 @@ body {
 
 
 
-/**
- * responsive for larger than 1200px screen
- */
-
 @media (min-width: 1200px) {
 
-  /**
-   * REUSED STYLE
-   */
 
   .container { max-width: 1180px; }
 
@@ -1261,17 +1049,10 @@ body {
 
 
 
-  /**
-   * HEADER
-   */
 
   .header .contact-number { --fs-6: 3rem; }
 
 
-
-  /**
-   * HERO
-   */
 
   .hero {
     padding-block-start: 150px;
@@ -1283,20 +1064,11 @@ body {
   .hero-text { --fs-7: 2.4rem; }
 
 
-
-  /**
-   * ABOUT
-   */
-
   .about-banner { max-width: 370px; }
 
   .about .abs-img-2 { width: max-content; }
 
 
-
-  /**
-   * NEWSLETTER
-   */
 
   .newsletter-content {
     max-width: 840px;
@@ -1304,10 +1076,6 @@ body {
   }
 
 
-
-  /**
-   * FOOTER
-   */
 
   .footer-top { padding-block: 60px; }
 
